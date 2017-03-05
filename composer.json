@@ -1,0 +1,27 @@
+{
+    "name": "cruelcap/video-downloader",
+    "description": "This is a script done by @sauryaacharya for Youtube and Vimeo video downloader. I just made a wrapper on top of it & published it on packagist.",
+    "type": "tool",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saurya Dhwoj Acharya",
+            "email": "acharya.saurya@sauryatech.com"
+        }
+    ],
+    "minimum-stability":"dev",
+    "require": {
+        "php": ">=7"
+    },
+    "autoload": {
+        "psr-0": {
+            "wrapper": "src/"
+        },
+        "files": [
+            "src/Downloader.php",
+            "src/LinkHandler.php",
+            "src/VimeoDownloader.php",
+            "src/YoutubeDownloader.php"
+        ]
+    }
+}
